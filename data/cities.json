@@ -1,0 +1,40 @@
+{
+  "cities": [
+    {
+      "id": "038b",
+      "cityName": "Gottingen",
+      "country": "Germany",
+      "emoji": "🇩🇪",
+      "date": "2024-04-15T13:19:56.203Z",
+      "notes": "",
+      "position": {
+        "lat": "51.536085601784755",
+        "lng": "9.942626953125002"
+      }
+    },
+    {
+      "id": "dd70",
+      "cityName": "Schwarzenberg",
+      "country": "Switzerland",
+      "emoji": "🇨🇭",
+      "date": "2024-04-15T13:20:00.102Z",
+      "notes": "",
+      "position": {
+        "lat": "47.025206001585396",
+        "lng": "8.195800781250002"
+      }
+    },
+    {
+      "id": "bc34",
+      "cityName": "Rome",
+      "country": "Italy",
+      "emoji": "🇮🇹",
+      "date": "2024-04-15T13:20:13.530Z",
+      "notes": "",
+      "position": {
+        "lat": "41.87774145109676",
+        "lng": "12.48046875"
+      }
+    }
+  ]
+}
