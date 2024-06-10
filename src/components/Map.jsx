@@ -1,4 +1,4 @@
-import { useNavigate, useSearchParams } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import {
   MapContainer,
   TileLayer,
@@ -39,13 +39,15 @@ function Map() {
     },
     [geolocationPosition]
   );
+  console.log(mapPosition, geolocationPosition);
   return (
     <div className={styles.mapContainer}>
-      {!geolocationPosition && (
-        <Button type="position" onClick={getPosition}>
-          {isLoadingPosition ? "Loading..." : "Use your position"}
-        </Button>
-      )}
+      {mapPosition[0] !== geolocationPosition?.lat &&
+        mapPosition[1] !== geolocationPosition?.lng && (
+          <Button type="position" onClick={getPosition}>
+            {isLoadingPosition ? "Loading..." : "Use your position"}
+          </Button>
+        )}
       <MapContainer
         center={mapPosition}
         zoom={6}
